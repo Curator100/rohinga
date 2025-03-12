@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROHINGA - Hand Shoes Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/shared.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="sharees.html">Sharees</a>
+            <a href="salwar.html">Salwar</a>
+            <a href="western.html">Western</a>
+            <a href="handshoes.html">Hand Shoes</a>
+        </div>
+        <div class="cart-icon">🛒</div>
+    </nav>
+
+    <!-- Cart Popup -->
+    <div class="cart-popup">
+        <h3>Shopping Cart</h3>
+        <div class="cart-items"></div>
+        <div class="cart-total">Total: 0 Taka</div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="products-grid">
+        <!-- First Two Visible Products -->
+        <div class="product-card">
+            <img src="../images/handshoe1.jpg" alt="Classic Clutch" class="product-image">
+            <div class="product-info">
+                <h3>Classic Clutch</h3>
+                <p class="price">2000 Taka</p>
+                <button onclick="cart.addItem({id: 'handshoe1', name: 'Classic Clutch', price: 2000})">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../images/handshoe2.jpg" alt="Designer Handbag" class="product-image">
+            <div class="product-info">
+                <h3>Designer Handbag</h3>
+                <p class="price">2000 Taka</p>
+                <button onclick="cart.addItem({id: 'handshoe2', name: 'Designer Handbag', price: 2000})">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Member-only Products -->
+        <div class="product-card member-only">
+            <img src="../images/handshoe3.jpg" alt="Premium Tote" class="product-image">
+            <div class="product-info">
+                <h3>Premium Tote</h3>
+                <p class="price hidden-price">3500 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'handshoe3', name: 'Premium Tote', price: 3500})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card member-only">
+            <img src="../images/handshoe4.jpg" alt="Luxury Evening Bag" class="product-image">
+            <div class="product-info">
+                <h3>Luxury Evening Bag</h3>
+                <p class="price hidden-price">4000 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'handshoe4', name: 'Luxury Evening Bag', price: 4000})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card member-only">
+            <img src="../images/handshoe5.jpg" alt="Designer Wallet" class="product-image">
+            <div class="product-info">
+                <h3>Designer Wallet</h3>
+                <p class="price hidden-price">4500 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'handshoe5', name: 'Designer Wallet', price: 4500})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card member-only">
+            <img src="../images/handshoe6.jpg" alt="Party Clutch" class="product-image">
+            <div class="product-info">
+                <h3>Party Clutch</h3>
+                <p class="price hidden-price">5000 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'handshoe6', name: 'Party Clutch', price: 5000})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card member-only">
+            <img src="../images/handshoe7.jpg" alt="Casual Sling" class="product-image">
+            <div class="product-info">
+                <h3>Casual Sling</h3>
+                <p class="price hidden-price">3800 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'handshoe7', name: 'Casual Sling', price: 3800})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card member-only">
+            <img src="../images/handshoe8.jpg" alt="Summer Collection" class="product-image">
+            <div class="product-info">
+                <h3>Summer Collection</h3>
+                <p class="price hidden-price">3200 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'handshoe8', name: 'Summer Collection', price: 3200})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card member-only">
+            <img src="../images/handshoe9.jpg" alt="Office Bag" class="product-image">
+            <div class="product-info">
+                <h3>Office Bag</h3>
+                <p class="price hidden-price">3600 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'handshoe9', name: 'Office Bag', price: 3600})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card member-only">
+            <img src="../images/handshoe10.jpg" alt="Mini Purse" class="product-image">
+            <div class="product-info">
+                <h3>Mini Purse</h3>
+                <p class="price hidden-price">2800 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'handshoe10', name: 'Mini Purse', price: 2800})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/shared.js"></script>
+</body>
+</html> 

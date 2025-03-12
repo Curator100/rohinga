@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROHINGA - Luxury Salwar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/shared.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="sharees.html">Sharees</a>
+            <a href="salwar.html">Salwar</a>
+            <a href="western.html">Western</a>
+            <a href="handshoes.html">Hand Shoes</a>
+        </div>
+        <div class="cart-icon">🛒</div>
+    </nav>
+
+    <!-- Cart Popup -->
+    <div class="cart-popup">
+        <h3>Shopping Cart</h3>
+        <div class="cart-items"></div>
+        <div class="cart-total">Total: 0 Taka</div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="products-grid">
+        <!-- First Two Visible Products -->
+        <div class="product-card">
+            <img src="../images/salwar1.jpg" alt="Classic Cotton Salwar" class="product-image">
+            <div class="product-info">
+                <h3>Classic Cotton Salwar</h3>
+                <p class="price">2000 Taka</p>
+                <button onclick="cart.addItem({id: 'salwar1', name: 'Classic Cotton Salwar', price: 2000})">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="../images/salwar2.jpg" alt="Designer Kameez" class="product-image">
+            <div class="product-info">
+                <h3>Designer Kameez</h3>
+                <p class="price">2000 Taka</p>
+                <button onclick="cart.addItem({id: 'salwar2', name: 'Designer Kameez', price: 2000})">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Member-only Products -->
+        <div class="product-card member-only">
+            <img src="../images/salwar3.jpg" alt="Premium Anarkali" class="product-image">
+            <div class="product-info">
+                <h3>Premium Anarkali</h3>
+                <p class="price hidden-price">3500 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'salwar3', name: 'Premium Anarkali', price: 3500})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card member-only">
+            <img src="../images/salwar4.jpg" alt="Luxury Palazzo Set" class="product-image">
+            <div class="product-info">
+                <h3>Luxury Palazzo Set</h3>
+                <p class="price hidden-price">4000 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'salwar4', name: 'Luxury Palazzo Set', price: 4000})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card member-only">
+            <img src="../images/salwar5.jpg" alt="Embroidered Suit" class="product-image">
+            <div class="product-info">
+                <h3>Embroidered Suit</h3>
+                <p class="price hidden-price">4500 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'salwar5', name: 'Embroidered Suit', price: 4500})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card member-only">
+            <img src="../images/salwar6.jpg" alt="Designer Churidar" class="product-image">
+            <div class="product-info">
+                <h3>Designer Churidar</h3>
+                <p class="price hidden-price">5000 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'salwar6', name: 'Designer Churidar', price: 5000})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card member-only">
+            <img src="../images/salwar7.jpg" alt="Party Wear Set" class="product-image">
+            <div class="product-info">
+                <h3>Party Wear Set</h3>
+                <p class="price hidden-price">3800 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'salwar7', name: 'Party Wear Set', price: 3800})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card member-only">
+            <img src="../images/salwar8.jpg" alt="Casual Wear" class="product-image">
+            <div class="product-info">
+                <h3>Casual Wear</h3>
+                <p class="price hidden-price">3200 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'salwar8', name: 'Casual Wear', price: 3200})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card member-only">
+            <img src="../images/salwar9.jpg" alt="Silk Blend Set" class="product-image">
+            <div class="product-info">
+                <h3>Silk Blend Set</h3>
+                <p class="price hidden-price">3600 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'salwar9', name: 'Silk Blend Set', price: 3600})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card member-only">
+            <img src="../images/salwar10.jpg" alt="Traditional Set" class="product-image">
+            <div class="product-info">
+                <h3>Traditional Set</h3>
+                <p class="price hidden-price">2800 Taka</p>
+                <button class="member-btn">Members Click Here</button>
+                <button onclick="cart.addItem({id: 'salwar10', name: 'Traditional Set', price: 2800})" class="hidden-price">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/shared.js"></script>
+</body>
+</html> 

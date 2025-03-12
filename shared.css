@@ -1,0 +1,215 @@
+/* Shared styles for all pages */
+:root {
+    --gold: #D4AF37;
+    --deep-black: #111111;
+    --burgundy: #800020;
+    --modal-bg: rgba(17, 17, 17, 0.95);
+}
+
+/* Product Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px;
+}
+
+.product-card {
+    background: var(--modal-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-info h3 {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.hidden-price {
+    display: none;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: var(--modal-bg);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    color: #fff;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--gold);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--gold);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* Buttons */
+button {
+    background: var(--gold);
+    color: var(--deep-black);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #B4941F;
+}
+
+.member-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Cart Styles */
+.cart-popup {
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    background: var(--modal-bg);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+    display: none;
+    z-index: 999;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cart-total {
+    margin-top: 20px;
+    text-align: right;
+    color: var(--gold);
+    font-weight: bold;
+}
+
+/* Membership Paths */
+.membership-paths {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.path {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.path h4 {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--modal-bg);
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.cart-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.cart-icon:hover {
+    color: var(--gold);
+} 
